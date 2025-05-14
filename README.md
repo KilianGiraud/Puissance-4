@@ -23,7 +23,7 @@ javac Menu.java
 Pour commencer à jouer, il faut executer cette commande dans le terminal :
 
 ```
-java Menu.java
+java Menu
 ```
 
 ## Fonctionnement
