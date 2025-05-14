@@ -1,4 +1,3 @@
-
 import javax.swing.*;
 import java.awt.*;
 import javax.swing.border.EmptyBorder;
@@ -409,15 +408,18 @@ class P4Vue extends JPanel {
                 if (modele.win()) {
                     if (modele.getJoueur() == 1) {
                         JOptionPane.showMessageDialog(P4Vue.this, "Joueur ROUGE a gagné !");
-                        System.exit(0);
+                        SwingUtilities.getWindowAncestor(P4Vue.this).dispose();
+                        new Menu();
                     } else if (modele.getJoueur() == 2) {
                         JOptionPane.showMessageDialog(P4Vue.this, "Joueur JAUNE a gagné !");
-                        System.exit(0);
+                        SwingUtilities.getWindowAncestor(P4Vue.this).dispose();
+                        new Menu();
                     }
                 } else {
                     if (modele.Tie()) {
-                        JOptionPane.showMessageDialog(P4Vue.this, "Egalité !");
-                        System.exit(0);
+                        JOptionPane.showMessageDialog(P4Vue.this, "Égalité !");
+                        SwingUtilities.getWindowAncestor(P4Vue.this).dispose();
+                        new Menu();
                     } else {
                         modele.changerPlayer();
                         if (modele.getJoueur() == 1) {
@@ -428,7 +430,7 @@ class P4Vue extends JPanel {
                             Joueur.setText("Tour du joueur JAUNE");
                         }
                     }
-                }
+                }                
             } else {
                 JOptionPane.showMessageDialog(P4Vue.this, "La colonne est pleine, impossible d'y rentrer un jeton !");
             }
