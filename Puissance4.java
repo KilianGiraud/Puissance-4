@@ -11,7 +11,7 @@ public class Puissance4 extends JFrame {
         setSize(800, 700);
         setLocationRelativeTo(null);
         setLayout(new BorderLayout());
-        setIconImage(new ImageIcon(getClass().getResource("/img/img.png")).getImage());
+        setIconImage(new ImageIcon("img/img.png").getImage());
 
         JLabel joueurLabel = new JLabel("Tour du joueur ROUGE", SwingConstants.CENTER);
         joueurLabel.setFont(new Font("Arial", Font.BOLD, 18));

@@ -13,7 +13,7 @@ public class Menu extends JFrame implements ActionListener {
         setSize(600, 400);
         setLocationRelativeTo(null);
         setLayout(new GridBagLayout());
-        setIconImage(new ImageIcon(getClass().getResource("/img/img.png")).getImage());
+        setIconImage(new ImageIcon("img/img.png").getImage());
 
         Font buttonFont = new Font("Arial", Font.BOLD, 20);
         Color bgColor = new Color(30, 30, 30);

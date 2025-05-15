@@ -8,7 +8,7 @@ public class RuleWindow extends JFrame {
         setLocationRelativeTo(null);
         setLayout(new BorderLayout());
         setDefaultCloseOperation(EXIT_ON_CLOSE);
-        setIconImage(new ImageIcon(getClass().getResource("/img/img.png")).getImage());
+        setIconImage(new ImageIcon("img/img.png").getImage());
 
         JLabel label = new JLabel("📘 Aligner 4 jetons en ligne, colonne ou diagonale.", SwingConstants.CENTER);
         label.setFont(new Font("Arial", Font.PLAIN, 18));
